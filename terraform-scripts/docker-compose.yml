@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  terraform:
+    image: hashicorp/terraform:0.12.21
+    volumes:
+      - .:/infra
+    working_dir: /infra
+    environment:
+      - AWS_ACCESS_KEY_ID="ASIAXJQRWBJEXEIKXE6B"
+      - AWS_SECRET_ACCESS_KEY="PSzsJO25XaWF/OXutSMYOObajyXteL8ckd2Mm8Zj"
+      - AWS_SESSION_TOKEN="FwoGZXIvYXdzEBUaDHPAFYap+Li6goHX2SK8Aa+0O6F5Do+qLGycX8eTD05GhX9R7LN4kXHF51uFKM7x7qQJOoa35EXFUnWxYeDx+p1KKgfQkqzy0idWRJFDSfAFjX0iOnIj7D/OOM5tzUhwCkubedzroYP9gA2fCF2kSuEBfw7IaAn7xNwTOR144ZMSbC3Sw3zxyosgtLzflJbBsMl6KSet+OFsEr/wjtZKIESrOhPEtBlqbj22cTV4uLk+w1iwgtMjGHrRY7m7PnxwK98BIm9lKOCosegIKKm9i5EGMi17dLe5C6psjX7I6sVZxlS5DhKUqX+0ZgxEm3PMHj8wga/OfjtE9E+Pg8FWldM="
